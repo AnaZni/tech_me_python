@@ -9,3 +9,14 @@ def my_func (firstname, lastname,middlename, year, city,phone,mail):
      return ' '.join([firstname, lastname,middlename,year,city,phone,mail])
 print(my_func(lastname = 'Иванов', firstname = 'Иван', middlename = 'Иванович',year = '1986', city = 'Норильск',
               mail = 'test@test.ru', phone = '89181111111'))
+****************************************************              
+              
+def my_func(arg1 , arg2, arg3):
+    if arg1 >= arg3 and arg2 >= arg3:
+        return arg1 + arg2
+    elif arg1 > arg2 and arg1 < arg3:
+        return arg1 + arg3
+    else:
+        return arg2 + arg3
+
+print(f'Result - {my_func(int(input("first argument")), int(input("second argument")),int(input("third argument")))}')
