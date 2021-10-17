@@ -1,0 +1,11 @@
+firstname = input('enter firstname')
+lastname = input('enter lastname')
+middlename = input('enter middlename')
+year = int(input('enter year'))
+city = input('enter city')
+phone = input('input telephone')
+mail = input('enter email')
+def my_func (firstname, lastname,middlename, year, city,phone,mail):
+     return ' '.join([firstname, lastname,middlename,year,city,phone,mail])
+print(my_func(lastname = 'Иванов', firstname = 'Иван', middlename = 'Иванович',year = '1986', city = 'Норильск',
+              mail = 'test@test.ru', phone = '89181111111'))
